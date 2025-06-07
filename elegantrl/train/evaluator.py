@@ -30,14 +30,14 @@ class Evaluator:
         self.recorder_step = args.eval_record_step  # start recording after the exploration reaches this step.
         self.max_r = -np.inf
         print("| Evaluator:"
-              "\n| `step`: Number of samples, or total training steps, or running times of `env.step()`."
-              "\n| `time`: Time spent from the start of training to this moment."
-              "\n| `avgR`: Average value of cumulative rewards, which is the sum of rewards in an episode."
-              "\n| `stdR`: Standard dev of cumulative rewards, which is the sum of rewards in an episode."
-              "\n| `avgS`: Average of steps in an episode."
-              "\n| `objC`: Objective of Critic network. Or call it loss function of critic network."
-              "\n| `objA`: Objective of Actor network. It is the average Q value of the critic network."
-              f"\n{'#' * 80}\n"
+        #      "\n| `step`: Number of samples, or total training steps, or running times of `env.step()`."
+        #      "\n| `time`: Time spent from the start of training to this moment."
+        #      "\n| `avgR`: Average value of cumulative rewards, which is the sum of rewards in an episode."
+        #      "\n| `stdR`: Standard dev of cumulative rewards, which is the sum of rewards in an episode."
+        #      "\n| `avgS`: Average of steps in an episode."
+        #      "\n| `objC`: Objective of Critic network. Or call it loss function of critic network."
+        #      "\n| `objA`: Objective of Actor network. It is the average Q value of the critic network."
+        #      f"\n{'#' * 80}\n"
               f"{'ID':<3}{'Step':>8}{'Time':>8} |"
               f"{'avgR':>8}{'stdR':>7}{'avgS':>7}{'stdS':>6} |"
               f"{'expR':>8}{'objC':>7}{'objA':>7}{'etc.':>7}", flush=True)
