@@ -189,8 +189,6 @@ def get_rewards_and_steps(env, actor, if_render: bool = False) -> Tuple[float, i
             env.render()
         if terminated or truncated:
             break
-    else:
-        print("| get_rewards_and_step: WARNING. max_step > 12345", flush=True)
 
     env_unwrapped = getattr(env, 'unwrapped', env)
     cumulative_returns = getattr(env_unwrapped, 'cumulative_returns', cumulative_returns)
